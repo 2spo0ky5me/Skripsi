@@ -2,13 +2,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: aliceblue;
-    background-color: #4c5265;
+    background-color: #969696;
 }
 h1{
     font-size:36px;
 }
 .container_child{
-    background-color:#323949;
+    background-color:#363636;
     width: 50%;
     float: left;
     margin-top: 5%;
