@@ -5,7 +5,7 @@ body{
     background-color: #969696;
 }
 h1{
-    font-size:36px;
+    font-size:30px;
 }
 .container_child{
     background-color:#363636;
@@ -18,7 +18,7 @@ h1{
 }
 .container_navigation{
     background-color: black;
-    width: 30%;
+    width: 20%;
 }
 .navigation{
     margin-top: 30%;
