@@ -7,5 +7,34 @@
 Training Model LSTM
 {% endblock %}
 
-{% block body %} 
+{% block body %}
+<div class="container_parameter">
+    <div class="container_dropdown">
+        <label for="epoch">Jumlah epoch:</label>
+        <select name="epoch" id="epoch">
+            <option value="none" selected disabled hidden>Pilih Jumlah Epoch</option>
+            <option value=100>100</option>
+            <option value=200>200</option>
+            <option value=500>500</option>
+            <option value=1000>1000</option>
+            <option value=2000>2000</option>
+        </select>
+    <div class="container_range">
+        <label for="hidden">Jumlah hidden layers:</label>
+        <input type="range" id="hidden" name="hidden" min="1" max="10" value=2 oninput="hiddenValue.innerText = this.value"><p id="hiddenValue">2</p>
+    </div>
+    <div class="container_range">
+        <label for="dense">Jumlah dense layers:</label>
+        <input type="range" id="dense" name="dense" min="0" max="10" value=5 oninput="denseValue.innerText = this.value"><p id="denseValue">5</p>  
+    </div>
+    <div class="container_range">
+        <label for="dropout">Dropout:</label>
+        <input type="range" id="dropout" name="dropout" min="0.1" max="0.9" value=0.2 step="0.05" oninput="dropValue.innerText = this.value"><p id="dropValue">0.2</p>  
+    </div>
+    <div class="container_range">
+        <label for="learningRate">Learning Rate:</label>
+        <input type="range" id="learningRate" name="learningRate" min="0.0" max="0.1" value=0.05 step="0.01" oninput="learningValue.innerText = this.value"><p id="learningValue">0.05</p>  
+    </div>
+    <button type="submit">Train</button>
+</div>
 {% endblock %}
